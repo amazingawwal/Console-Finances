@@ -89,22 +89,22 @@ var finances = [
 
 
 // TASK 1 --- total number of months
-// var numberOfMonths = 0;
+var numberOfMonths = 0;
 
-//  for (var i=0; i<finances.length; i++) {
-//       numberOfMonths++  
-// };
-// console.log(numberOfMonths);
+ for (var i=0; i<finances.length; i++) {
+      numberOfMonths++  
+};
+console.log("Total Months: "+numberOfMonths);
 
 // TASK 2 --- total amount
-// var totalAmount = 0;
+var totalAmount = 0;
 
-// for (var i=0; i<finances.length; i++) {
-//         var amount = (finances[i][1]) 
-//         totalAmount+=amount  
-// };
+for (var i=0; i<finances.length; i++) {
+        var amount = (finances[i][1]) 
+        totalAmount+=amount  
+};
 
-// console.log(totalAmount);
+console.log("Total Amount: "+totalAmount);
 
 
 
@@ -159,11 +159,11 @@ avg = Math.round((sumOfChange / 86) * 100) / 100
 
 
 //TASK 3 
-console.log(avg)
+console.log("Average Change:"+avg)
 //TASK 4 
-console.log(greatestIncrease)
+console.log("Greatest Increase in Profits/Losses: "+greatestIncrease)
 //TASK 5
-console.log(leastIncrease)
+console.log("Greatest Decrease in Profits/Losses: "+leastIncrease)
 
 
 
