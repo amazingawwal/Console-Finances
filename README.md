@@ -18,3 +18,6 @@ This project aims to use JavaScript algorithm to solve 5  financial questions wh
 ## Tools
 - VS Code
 - Browser (Developer Tools)
+
+## Deployed Website
+- Deployed site url: https://amazingawwal.github.io/Console-Finances/ 
