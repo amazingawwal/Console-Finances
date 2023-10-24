@@ -106,9 +106,6 @@ var finances = [
 
 // console.log(totalAmount);
 
-// TASK 3 --- average change
-// var averageAmount = totalAmount/(numberOfMonths-1)
-// console.log(averageAmount)
 
 
 
@@ -123,7 +120,7 @@ var finances = [
 // console.log(greatestIncrease);
 
 
-// Greatest Increase in Profits/Losses
+// Greatest increase and decrease in Profits/Losses calculation
 var totalChange = 0;
 var net = 0
 var changeArray = [];
@@ -136,11 +133,11 @@ for (var i = 0; i < finances.length; i++) {
       totalChange = finances[i][m] - net;
       net = finances[i][m]
       changeArray.push(totalChange)
-
+//greatest increase 
       if( totalChange > greatestIncrease[1]){
         greatestIncrease = [finances[i][0], finances[i][1]]
       }
-
+//greatest decrease
       if( totalChange < leastIncrease[1]){
         leastIncrease = [finances[i][0], finances[i][1]]
       }
@@ -149,7 +146,7 @@ for (var i = 0; i < finances.length; i++) {
 
   }
 };
-
+// average change
 var sumOfChange = 0;
 var avg;
 
@@ -160,8 +157,13 @@ for (let i = 0; i < changeArray.length; i++) {
 
 avg = Math.round((sumOfChange / 86) * 100) / 100
 
-console.log(leastIncrease)
 
+//TASK 3 
+console.log(avg)
+//TASK 4 
+console.log(greatestIncrease)
+//TASK 5
+console.log(leastIncrease)
 
 
 
